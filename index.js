@@ -116,6 +116,8 @@ async function run() {
             res.json(result)
         })
         //DELETE API Order { email: req.query.email }
+
+
         app.delete('/orders/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) }
@@ -133,6 +135,7 @@ async function run() {
     }
     finally {
         //await client.close();
+        //hfsdhfuhfudshf
     }
 
 }
